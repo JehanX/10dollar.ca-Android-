@@ -14,7 +14,7 @@ import android.widget.BaseExpandableListAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.a10dollar.user1.a10dollarca.R;
+import ca.a10dollar.user1.a10dollarca.R;
 
 import java.util.LinkedHashMap;
 import java.util.List;

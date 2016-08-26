@@ -5,11 +5,11 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "com.example.ca.a10dollarca"
+        applicationId "ca.a10dollar.ca.a10dollarca"
         minSdkVersion 21
         targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "2.0"
     }
     buildTypes {
         release {

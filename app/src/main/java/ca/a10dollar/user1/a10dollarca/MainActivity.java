@@ -22,7 +22,7 @@ import android.widget.ExpandableListView;
 import android.widget.ListAdapter;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import com.a10dollar.user1.a10dollarca.R;
+import ca.a10dollar.user1.a10dollarca.R;
 
 
 import java.util.ArrayList;
@@ -132,7 +132,8 @@ public class MainActivity extends AppCompatActivity {
 
         int button_len = Buttons_Info.size();
         //Check if client define buttons. If button_len equals to 0 means client doesn't define any
-        //buttons and we use default button's icon, text and function. There are 5 buttons in default.
+        //buttons and we use d
+        // efault button's icon, text and function. There are 5 buttons in default.
         if (button_len!=0) {
 
             //loop 5 buttons
@@ -149,6 +150,10 @@ public class MainActivity extends AppCompatActivity {
                     //Use default button icon
                     if (button_icon!=null) {
                         Drawable drawable = new BitmapDrawable(getResources(),button_icon);
+                        button.setCompoundDrawablesWithIntrinsicBounds(null, drawable, null, null);
+                    }
+                    else {
+                        Drawable drawable = getResources().getDrawable(R.drawable.white);
                         button.setCompoundDrawablesWithIntrinsicBounds(null, drawable, null, null);
                     }
                 }
